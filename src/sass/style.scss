@@ -1,0 +1,18 @@
+/* Variables */
+
+$color-main: #002D69;
+$color-dark: #000000;
+$color-light: #C2C2C2;
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    color: $color-dark;
+    background-color: $color-light;
+}
