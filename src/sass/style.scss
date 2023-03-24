@@ -3,6 +3,9 @@
 $color-main: #002D69;
 $color-dark: #000000;
 $color-light: #C2C2C2;
+$color-white: #fff;
+$font-main: Arial, sans-serif;
+$transition: all 1s;
 
 /* Global */
 
@@ -13,6 +16,64 @@ $color-light: #C2C2C2;
 }
 
 body {
-    color: $color-dark;
-    background-color: $color-light;
+  color: $color-dark;
+  background-color: $color-light;
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
 }
+
+.container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+/* Nav */
+
+.navigation {
+  padding: 0;
+  margin: 0;
+  background-color: $color-main;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  position: absolute;
+  top: 18px;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: $color-white;
+  transition: $transition;
+}
+
+.navigation li a:hover {
+  text-decoration: underline;
+}
+
+.navigation .logo {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+}
+
+.navigation img {
+  height: 50px;
+  width: auto;
+}
+
+/* Splash */
