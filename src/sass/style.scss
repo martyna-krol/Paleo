@@ -24,10 +24,15 @@ body {
 }
 
 .container {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  width: 100%;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: $color-white;
+  min-height: 500px;
+}
+
+.section-title {
+  margin: 0; 
 }
 
 /* Nav */
@@ -77,3 +82,24 @@ body {
 }
 
 /* Splash */
+
+.splash {
+  background-image: url('https://i.postimg.cc/gc4Qn64s/pexels-egor-kamelev-920161.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  min-height: 600px;
+  color: $color-white;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+  top: 50%;
+}
+
+.page-title {
+  font-size: 72px;
+  text-transform: uppercase;
+}
