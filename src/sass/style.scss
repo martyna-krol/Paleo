@@ -181,3 +181,48 @@ body {
   color: $color-main;
   font-size: 30px;
 }
+
+/* Area */
+
+.area .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_area {
+  flex: auto;
+  min-width: 100px;
+  min-height: 500px;
+  background-position: center center;
+  background-size: cover;
+  transition: $transition;
+}
+
+.img_area .hide {
+  display: none;
+}
+
+.img_area:hover {
+  flex-grow: 3;
+}
+
+.img_area:hover > .hide {
+  display: block;
+  text-align: center;
+  width: 100px;
+  background-color: $color-main;
+  color: $color-white;
+}
+
+.img1 {
+  background-image: url('../images/Gotlandia1.JPG');
+}
+
+.img2 {
+  background-image: url('../images/Belgia.JPG');
+}
+
+.img3 {
+  background-image: url('../images/Dziewki.JPG');
+}
