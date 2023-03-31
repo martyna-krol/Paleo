@@ -4,7 +4,8 @@ $color-main: #002D69;
 $color-dark: #000000;
 $color-light: #C2C2C2;
 $color-white: #fff;
-$font-main: Arial, sans-serif;
+$font-main: 'Cabin', Sans-Serif;
+$font-head: 'Roboto Condensed', Sans-Serif;
 $transition: all 1s;
 
 /* Global */
@@ -33,6 +34,19 @@ body {
 
 .section-title {
   margin: 0; 
+  padding: 80px 10px 50px;
+  font-family: $font-head;
+  font-size: 40px;
+  text-align: center;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  background-color: $color-main;
+  margin: 15px auto;
+  width: 120px;
+  height: 12px;
 }
 
 /* Nav */
@@ -42,7 +56,7 @@ body {
   margin: 0;
   background-color: $color-main;
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: fixed;
   top: 0;
 }
@@ -52,7 +66,7 @@ body {
   margin: 0;
   padding: 0 20px;
   position: absolute;
-  top: 18px;
+  top: 27px;
 }
 
 .navigation li {
@@ -77,20 +91,22 @@ body {
 }
 
 .navigation img {
-  height: 50px;
+  margin: 5px 5px;
+  height: 60px;
   width: auto;
 }
 
 /* Splash */
 
 .splash {
-  background-image: url('https://i.postimg.cc/gc4Qn64s/pexels-egor-kamelev-920161.jpg');
+  background-image: url('../images/heliopora1.JPG');
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  min-height: 600px;
+  min-height: 700px;
   color: $color-white;
+  text-shadow: 3px 3px 2px $color-dark;
 }
 
 .splash-inner {
@@ -102,4 +118,51 @@ body {
 .page-title {
   font-size: 72px;
   text-transform: uppercase;
+  font-family: $font-head;
+}
+
+.page-subtitle {
+  font-size: 30px;
+  font-family: $font-head;
+}
+
+/* Team */
+
+.team ul {
+  list-style-type: none;
+  margin: 0 100px;
+  padding: 10px 50px;
+}
+
+.team li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 10px auto;
+}
+
+.team img {
+  border-radius: 50%;
+  height: 180px;
+  display: block;
+  margin: 10px;
+}
+
+.team .person {
+  padding: 15px;
+}
+
+.person h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.person h3:after {
+  content: '';
+  display: block;
+  background-color: $color-main;
+  margin: 5px 0;
+  width: 70px;
+  height: 5px;
 }
