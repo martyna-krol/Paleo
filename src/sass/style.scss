@@ -191,13 +191,13 @@ body {
 }
 
 .team a {
-  color: $color-main;
-  text-decoration: underline;
+  color: $color-dark;
+  text-decoration: none;
 }
 
 .team a:visited {
-  color: $color-light;
-  text-decoration: underline;
+  color: $color-dark;
+  text-decoration: none;
 }
 
 /* Description*/
