@@ -16,6 +16,10 @@ $transition: all 1s;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $color-dark;
   background-color: $color-light;
@@ -135,11 +139,16 @@ body {
   font-size: 72px;
   text-transform: uppercase;
   font-family: $font-head;
+  margin-top: 20px;
 }
 
 .page-subtitle {
   font-size: 30px;
   font-family: $font-head;
+}
+
+.splash img {
+  max-width: 100px;
 }
 
 /* Team */
@@ -181,13 +190,39 @@ body {
   height: 5px;
 }
 
-/* Goals */
+.team a {
+  color: $color-main;
+  text-decoration: underline;
+}
 
-.goals li {
+.team a:visited {
+  color: $color-light;
+  text-decoration: underline;
+}
+
+/* Description*/
+
+.description p{
+  text-align: justify;
+}
+
+/* Goals and summary*/
+
+.goals li,
+.summary li 
+{
   padding: 10px;
 }
 
-.goals li::marker {
+.goals ul,
+.summary ul 
+{
+  margin-bottom: 50px;
+}
+
+.goals li::marker,
+.summary li::marker
+{
   color: $color-main;
   font-size: 30px;
 }
@@ -236,7 +271,6 @@ body {
   bottom: 10%;
   left: 25%;
   box-shadow: 5px 5px 10px $color-dark;
-  border: solid 1px $color-light;
 }
 
 .img-area:hover {
@@ -292,12 +326,62 @@ body {
   display: none;
 }
 
+.publications .article-description {
+  text-align: justify;
+}
+
+.publications .biblio {
+  color: $color-light;
+}
+
+.publications .biblio a {
+  color: $color-light;
+}
+
 /* Footer */
 
 footer {
   background-color: $color-main;
   color: $color-white;
   margin: 0;
-  padding: 20px;
-  font-size: 12px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+footer a {
+  color: $color-white;
+  text-decoration: underline;
+}
+
+.footer-inner {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-right ul {
+  list-style: none;
+}
+
+.footer-right li {
+  padding: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin: 0 auto 5px auto;
+  width: 100%;
+}
+
+footer span {
+  font-weight: bold;
 }
