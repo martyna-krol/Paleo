@@ -126,13 +126,14 @@ body {
   display: flex;
   min-height: 700px;
   color: $color-white;
-  text-shadow: 3px 3px 2px $color-dark;
+  text-shadow: 2px 2px 3px rgb(25, 43, 27);
 }
 
 .splash-inner {
   margin: auto;
-  max-width: 70%;
+  max-width: 1140px;
   top: 50%;
+  text-align: center;
 }
 
 .page-title {
@@ -143,12 +144,17 @@ body {
 }
 
 .page-subtitle {
-  font-size: 30px;
+  font-size: 27px;
   font-family: $font-head;
+  padding: 0 70px;
 }
 
 .splash img {
-  max-width: 100px;
+  max-width: 130px;
+  background-color: $color-main;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 50%;
 }
 
 /* Team */
@@ -204,6 +210,18 @@ body {
 
 .description p{
   text-align: justify;
+}
+
+.description img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.description .small {
+  font-size: 12px;
+  margin-bottom: 40px;
 }
 
 /* Goals and summary*/
@@ -338,6 +356,24 @@ body {
   color: $color-light;
 }
 
+/* Presentations */
+
+.conference {
+  text-align: center;
+}
+
+.conference h3 {
+  margin: 50px auto 10px;
+}
+
+.conference video {
+  margin: 10px;
+}
+
+.conference a {
+  color: $color-light;
+}
+
 /* Footer */
 
 footer {
@@ -359,21 +395,28 @@ footer a {
   justify-content: space-between;
 }
 
-.footer-left {
-  flex: 1;
+.col3 {
+  flex: 3;
+  padding: 0 15px;
 }
 
-.footer-right {
-  flex: 1;
-  text-align: right;
+.col2 {
+  flex: 2;
+  padding: 0 15px;
 }
 
-.footer-right ul {
+.col1 {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.footer ul {
   list-style: none;
+  padding: 0;
 }
 
-.footer-right li {
-  padding: 5px;
+.footer li {
+  padding-bottom: 5px;
 }
 
 .footer-bottom {
@@ -383,5 +426,5 @@ footer a {
 }
 
 footer span {
-  font-weight: bold;
+  font-weight: 700;
 }
